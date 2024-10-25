@@ -1,0 +1,639 @@
+.landing-container {
+    /* background-image: url('./assets/3d-render-transcendent-light-phoenix-wallpaper.jpg'); */
+    background-size: cover;
+    /* Adjust this property for image size */
+    background-position: center;
+    /* Center the image */
+    height: 100vh;
+    /* Set the container height to the viewport height */
+    display: flex;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    z-index: 102;
+    text-align: center;
+}
+
+.bounce-text {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+        /* Text starts at its original position */
+    }
+
+    40% {
+        transform: translateY(-30px);
+        /* Text moves upward */
+    }
+
+    60% {
+        transform: translateY(-15px);
+        /* Text moves down slightly */
+    }
+}
+
+.bounce-animation {
+    animation: bounce 1s ease infinite;
+}
+
+header {
+    background-image: url('./assets/3d-render-transcendent-light-phoenix-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: 100;
+    position: relative;
+}
+
+.bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 101;
+    opacity: 0.5;
+}
+
+nav,
+#demo {
+    position: relative;
+    z-index: 102;
+}
+
+.img-text h1 {
+    font-size: 70px;
+}
+
+.img-text button {
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        background-size: contain;
+    }
+}
+
+.section-1 {
+    padding: 75px;
+}
+
+.section-1 h1 {
+    font-size: 65px;
+}
+
+.landing-container-1 {
+    display: flex;
+}
+
+.icon-styles {
+    padding-left: 150px;
+}
+
+.half-width {
+    margin: 20px;
+    padding: 20px;
+    flex: 1 1 45%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+/* icons flows */
+/* Container that holds the flowing icons */
+.icon-container {
+    width: 100%;
+    overflow: hidden;
+    /* Hide the overflow to create a scrolling effect */
+    position: relative;
+    background-color: #fff;
+    padding: 25px;
+}
+
+/* Flow of icons */
+.icon-flow {
+    display: flex;
+    /* Arrange icons horizontally */
+    animation: scrollIcons 15s linear infinite;
+    /* Adjust timing as necessary */
+    width: max-content;
+}
+
+/* Icons styling */
+.icon-flow img {
+    height: 64px;
+    /* Adjust icon size as needed */
+    margin: 0 10px;
+    /* Add some spacing between icons if needed */
+}
+
+@keyframes scrollIcons {
+    0% {
+        transform: translateX(0);
+        /* Start from original position */
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Scroll until half of the duplicated content */
+    }
+}
+
+/* Optional: Add hover effect to pause the scrolling */
+.icon-container:hover .icon-flow {
+    animation-play-state: paused;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px;
+    background-color: #df6262b3;
+}
+
+.section-2 p {
+    width: 400px;
+    font-size: 22px;
+}
+
+.custom-border {
+    background-color: #a178ed;
+    font-size: 22px;
+    width: fit-content;
+    padding: 20px;
+    color: white;
+}
+
+.animated-image {
+    width: 200px;
+
+    /* Set the initial width of the image */
+    transition: transform 1s ease-in-out;
+    /* Set the animation properties */
+}
+
+/* Hover effect: Scale up the image on hover */
+.animated-image:hover {
+    transform: scale(1.2);
+    /* Scale the image to 120% on hover */
+}
+
+.custom-border-1 {
+    border: 2px solid white;
+    color: white;
+    font-size: 22px;
+    width: fit-content;
+    padding: 20px;
+}
+
+.section-4 {
+    padding: 60px;
+}
+
+.carousel-item h2 {
+    font-size: 36px;
+    /* Large heading size */
+    margin-bottom: 40px;
+    /* Space at the bottom of the heading */
+    color: white;
+    /* Dark text color */
+    text-align: center;
+}
+
+.cards {
+    background: rgb(206, 102, 102);
+    /* Card background color */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Add shadow for depth */
+    padding: 20px;
+    /* Padding inside each card */
+    margin: 15px;
+    /* Margin around each card to create gaps */
+    text-align: center;
+    margin-right: 50px;
+}
+
+
+.row {
+    display: flex;
+    /* Flexbox layout for rows */
+    justify-content: space-between;
+    /* Space out the cards evenly */
+}
+
+.cs-slides {
+    background-image: url(./assets/3d-render-transcendent-light-phoenix-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.carousel {
+    padding: 20px;
+}
+
+
+/* Call to Action Button */
+.services-text {
+    margin-top: 30px;
+}
+
+.services-text p {
+    font-size: 18px;
+    color: #555;
+}
+
+.services-text button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.services-text button:hover {
+    background-color: #e67e22;
+}
+
+
+.landing-container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.animated-image {
+    width: 100%;
+    /* This will make the image take up the full width of its container */
+    max-width: 250px;
+    /* Adjust the size to control the maximum width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .landing-container-2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .landing-container-1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* Center-align text */
+    }
+
+    .half-width,
+    .fade-in-left,
+    .fade-in-right {
+        width: 100%;
+        /* Full width */
+        margin: 10px 0;
+        /* Add some spacing */
+
+    }
+
+    .custom-border {
+        margin-top: 20px;
+        /* Space above the button */
+    }
+
+
+
+    .animated-image {
+        max-width: 200px;
+        /* Adjust the size for smaller screens */
+        order: -1;
+    }
+}
+
+/*BELOW IS THE CSS FOR THE SOCAIL MEDIA ICONS*/
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #333;
+    /* Default color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0077b5;
+    /* LinkedIn color on hover */
+}
+
+.social-icons a:nth-child(2):hover {
+    color: #E4405F;
+    /* Instagram color */
+}
+
+.social-icons a:nth-child(3):hover {
+    color: #0084FF;
+    /* Messenger color */
+}
+
+.social-icons a:nth-child(4):hover {
+    color: #D44638;
+    /* Gmail color */
+}
+
+.half-width p {
+    font-size: medium;
+}
+
+
+/*BELOW PART IS FOR THE THE QUESTION ABOVE THE FOOTER ABOUT COLLABORATION*/
+
+.services-text {
+    margin-top: 20px;
+    /* Space above the text */
+    font-size: 1em;
+    color: #333;
+    /* Dark text for contrast */
+}
+
+.services-text {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space between text and button */
+    align-items: center;
+    /* Center vertically */
+    margin-top: 20px;
+    /* Space above the text */
+    font-size: 1.2em;
+    /* Enlarge the text */
+    color: #333;
+    /* Dark text for contrast */
+}
+
+.services-text p {
+    margin: 0;
+    /* Remove default margin */
+    flex: 1;
+    /* Allow text to take available space */
+}
+
+.services-text button {
+    padding: 10px 20px;
+    /* Increase button padding */
+    font-size: 1.1em;
+    /* Enlarge button text */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: rgb(224, 236, 210);
+    /* Button color */
+    color: #111;
+    /* Button text color */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Transition for hover effect */
+}
+
+.services-text button:hover {
+    background-color: white;
+    /* Change color on hover */
+    transform: scale(1.05);
+    /* Slight scaling for emphasis */
+}
+
+.services-text {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #ffd700;
+    text-align: center;
+    padding: 4px 0;
+    /* Decrease top and bottom padding */
+    font-size: 11px;
+    /* Decrease font size for a thinner look */
+    margin-top: 20px;
+}
+
+
+/* Base styles remain the same, adjusting only for smaller screen sizes */
+
+/* General mobile styles (screens less than 768px wide) */
+@media (max-width: 768px) {
+
+    /* Adjusting the landing container */
+    .landing-container {
+        padding-top: 50px;
+        justify-content: flex-start;
+        text-align: center;
+        height: auto;
+        /* Allow height to adjust naturally */
+    }
+
+    .landing-container h1 {
+        font-size: 50px;
+        /* Reduce size for smaller screens */
+    }
+
+    .img-text button {
+        font-size: 20px;
+    }
+
+    /* Adjust navbar links for better readability */
+    .navbar .nav-link {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    /* Section padding adjustments */
+    .section-1,
+    .section-2,
+    .section-4 {
+        padding: 30px 15px;
+    }
+
+    /* Responsive service grid */
+    .service-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* Smaller columns for mobile */
+        gap: 20px;
+    }
+
+    /* Make carousel image background smaller and contain */
+    .carousel {
+        background-size: contain;
+        height: auto;
+        padding: 10px;
+    }
+
+
+    /* Adjusting the animated image */
+    .animated-image {
+        max-width: 150px;
+    }
+
+    /* Center-align social icons for mobile view */
+    .social-icons {
+        text-align: center;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 10px;
+        padding: 10px 0;
+    }
+}
+
+/* Further adjustments for extra-small devices (screens less than 576px wide) */
+@media (max-width: 576px) {
+
+    /* Make heading and text smaller */
+    .img-text h1 {
+        font-size: 40px;
+    }
+
+    .section-1 h1 {
+        font-size: 50px;
+    }
+
+    .section-1 p {
+        font-size: 18px;
+    }
+
+    .service-item h3 {
+        font-size: 20px;
+    }
+
+    .service-item p {
+        font-size: 14px;
+    }
+
+    /* Smaller button text */
+    .services-text button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    /* Smaller image in services section */
+    .animated-image {
+        max-width: 120px;
+    }
+}
+
+/* NAVBAR STYLING STARTS HERE */
+.navbar .nav-link {
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for the nav links */
+.navbar .nav-link:hover {
+    color: #f39c12;
+    /* Phoenix-inspired color */
+}
+
+/* Active link color */
+.navbar .nav-link.active {
+    color: #f39c12;
+}
+
+/* Hamburger menu (toggler) styles */
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 30px;
+    /* Width of the icon */
+    height: 22px;
+    /* Height of the icon */
+    position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+    content: '';
+    display: block;
+    background-color: white;
+    /* Color of the lines */
+    height: 3px;
+    /* Thickness of the lines */
+    width: 100%;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+    top: 0;
+    /* First line (top) */
+}
+
+.navbar-toggler-icon div {
+    top: 9px;
+    /* Middle line */
+}
+
+.navbar-toggler-icon::after {
+    bottom: 0;
+    /* Last line (bottom) */
+}
+
+/* Customizing the navbar collapse background on mobile */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background-color: #333;
+        /* Background color for menu on mobile */
+    }
+
+    /* Style for collapsed nav links */
+    .navbar-collapse .nav-link {
+        color: white;
+        /* White text for mobile menu */
+        text-align: center;
+        /* Center align the menu items */
+        margin-bottom: 10px;
+        /* Add space between menu items */
+    }
+
+    .navbar-collapse .nav-link:hover {
+        color: #f39c12;
+        /* Hover color for mobile menu links */
+    }
+}
+
+/*NAVBAR CSS ENDS HERE*/
